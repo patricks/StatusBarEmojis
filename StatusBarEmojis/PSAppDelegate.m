@@ -40,6 +40,7 @@
     
     // add the exit menu item
     NSMenuItem *exitItem = [[NSMenuItem alloc] initWithTitle:@"Quit" action:@selector(QuitItemSelected) keyEquivalent:@""];
+    [mainMenu addItem:[NSMenuItem separatorItem]];
     [mainMenu addItem:exitItem];
 }
 
