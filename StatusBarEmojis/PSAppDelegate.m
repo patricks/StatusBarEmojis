@@ -37,6 +37,10 @@
     } else {
         NSLog(@"ERROR: Something went wrong, categorynames and emojistrings have different count");
     }
+    
+    // add the exit menu item
+    NSMenuItem *exitItem = [[NSMenuItem alloc] initWithTitle:@"Quit" action:@selector(QuitItemSelected) keyEquivalent:@""];
+    [mainMenu addItem:exitItem];
 }
 
 - (NSMenuItem *)setupEmojiMenuWithName:(NSString *)name andString:(NSString *)strings
@@ -69,6 +73,12 @@
     //NSLog(@"DBG: Selected emoji: %@", item.title);
     [self writeStringToPasteboard:item.title];
 }
+
+- (void)QuitItemSelected
+{
+    [NSApp terminate:self];
+}
+
 
 - (BOOL)writeStringToPasteboard:(NSString *)string
 {
