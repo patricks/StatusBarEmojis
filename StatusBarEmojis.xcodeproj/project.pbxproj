@@ -13,6 +13,7 @@
 		CD60CCA81685BABD00C07E68 /* Category-Emoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD60CCA71685BABD00C07E68 /* Category-Emoji.plist */; };
 		CD60CCAE1685BAF900C07E68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD60CCAD1685BAF900C07E68 /* main.m */; };
 		CD67A71F168508190077F840 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD67A71E168508190077F840 /* Cocoa.framework */; };
+		CDBFBDE616861A4700D59921 /* emoji_icon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = CDBFBDE516861A4700D59921 /* emoji_icon.tiff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		CD67A723168508190077F840 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CD80886B1685BB3D0070109F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = StatusBarEmojis/en.lproj/MainMenu.xib; sourceTree = SOURCE_ROOT; };
 		CD80886E1685BB480070109F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = StatusBarEmojis/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		CDBFBDE516861A4700D59921 /* emoji_icon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = emoji_icon.tiff; path = StatusBarEmojis/emoji_icon.tiff; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		CD67A725168508190077F840 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CDBFBDE516861A4700D59921 /* emoji_icon.tiff */,
 				CD80886D1685BB480070109F /* InfoPlist.strings */,
 				CD60CCAB1685BAF000C07E68 /* StatusBarEmojis-Info.plist */,
 				CD60CCAD1685BAF900C07E68 /* main.m */,
@@ -158,6 +161,7 @@
 				CD60CCA81685BABD00C07E68 /* Category-Emoji.plist in Resources */,
 				CD0C7A321685BE6500D5CA4A /* MainMenu.xib in Resources */,
 				CD0C7A331685BE6C00D5CA4A /* InfoPlist.strings in Resources */,
+				CDBFBDE616861A4700D59921 /* emoji_icon.tiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

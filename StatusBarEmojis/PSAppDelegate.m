@@ -17,9 +17,10 @@
     emojiStrings = [[NSMutableArray alloc] initWithObjects:nil];
     [self setupMainMenu];
     
+    NSImage *statusImage = [[NSImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"emoji_icon" ofType:@"tiff"]];
+    
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    NSString *emoji = [NSString stringWithFormat:@"\U0001F604"];
-    [statusItem setTitle:emoji];
+    [statusItem setImage:statusImage];
     [statusItem setMenu:mainMenu];
     [statusItem setHighlightMode:YES];
 }
