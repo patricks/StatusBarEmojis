@@ -50,10 +50,16 @@
     NSMenu *emojiMenu = [[NSMenu alloc] init];
     
     for (NSString *code in emojiString) {
-        NSScanner *scanner = [NSScanner scannerWithString:code];
-        unsigned int val = 0;
-        (void) [scanner scanHexInt:&val];
-        NSString *emoji = [[NSString alloc] initWithBytes:&val length:sizeof(val) encoding:NSUTF32LittleEndianStringEncoding];
+        NSString *emoji = [[NSString alloc] init];
+        
+        if ([code hasPrefix:@"0x"]) {
+            NSScanner *scanner = [NSScanner scannerWithString:code];
+            unsigned int val = 0;
+            (void) [scanner scanHexInt:&val];
+            emoji = [[NSString alloc] initWithBytes:&val length:sizeof(val) encoding:NSUTF32LittleEndianStringEncoding];
+        } else {
+            emoji = code;
+        }
         
         if ([emoji length] > 0) {
             NSMenuItem *newItem = [[NSMenuItem alloc] initWithTitle:emoji action:@selector(MenuItemSelected:) keyEquivalent:@""];
