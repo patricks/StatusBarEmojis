@@ -1,7 +1,9 @@
-.AppleDouble
-.LSOverride
-Icon
+# old skool
+.svn
 
+# OSX
+.DS_Store?
+.DS_Store
 
 # Thumbnails
 ._*
@@ -10,9 +12,12 @@ Icon
 .Spotlight-V100
 .Trashes
 
+# vim noise
+*~
+*.swp
+
 # Xcode
-.DS_Store
-*/build/*
+build/*
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -26,6 +31,4 @@ Icon
 xcuserdata
 profile
 *.moved-aside
-DerivedData
-.idea/
-*.hmap
+
